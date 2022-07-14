@@ -12,13 +12,12 @@ public class Human {
 	}
 	
 	public int getAge() { 
-		return this.age; //값을 외부로 보내준다
+		return this.age; //setAge값을 외부로 보내준다
 	}
 	
 	
-	
 	public void info() {
-		System.out.println(this.age);
+		System.out.println(this.age); //setAge값을 외부로 보내준다
 	}
 	
 	
