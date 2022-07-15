@@ -4,6 +4,9 @@ public class Iu {
 
 	private String name; 
 	private int age;
+	//fix-study
+	private String test;
+	
 	
 	
 	private Iu() { //기본 생성자
