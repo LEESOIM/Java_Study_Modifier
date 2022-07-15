@@ -1,42 +1,32 @@
 package com.iu.main;
 
-import com.iu.animal.Cat;
-import com.iu.animal.Human;
-import com.iu.animal.Zoo;
+import com.iu.terran.Marine;
+import com.iu.terran.Scv;
+import com.iu.unit.Unit;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
+		Marine marine = new Marine();
+		Scv scv = new Scv();
 		
-		//효용범위 : public > protected > default > private
-
-		Cat cat = new Cat(); //생성자 호출해서 객체를 만든다!
-		cat.sound();
-//		cat.age = 5;		private : 다른 클래스라 접근 불가능
-//		cat.name = "냥";		default : 다른 패키지라 접근 불가능
+		//Marine is a Unit
+		//Scv is a Unit
+		//아래는 상속관계에서만 가능하다.
+		//마린타입은 유닛타입이므로 가능............
+		//다형성
+		Unit unit = marine;
+//		Unit unit = scv;
 		
-		System.out.println("-----------------");
-		Human human = new Human();
-//		human.age=500;		private : 같은 클래스 내에서만 사용이 가능
-		human.setAge(130); //직접적으로 접근하지 않고 메서드 통해서 접근
-		System.out.println(human.getAge());
-		human.info(); 
+		System.out.println(unit.getHp());
+		System.out.println(unit.getColor());
+		System.out.println(unit.getName());
+//		System.out.println(unit.getWeapon()); 
+//		→ Weapon까지 만들어져있지만 unit이 접근가능한건 자신이 알고있는것만 접근가능함.
 		
-
-		
-		System.out.println("-----------------");
-		//System이라는 클래스에 out이라는 변수가 선언되었다
-		
-		
-		//static : 객체를 생성하지 않고 사용 가능
-		System.out.println(Zoo.title); //Zoo클래스에 선언된 title
-		Zoo.info();
-		
-		
-		System.out.println("-----------------");
-		Zoo zoo = new Zoo();
-		zoo.getPrice(); //final : 한번 대입한 값은 변경 금지, 상수 취급(대문자)
-		
+//		marine = (Marine)unit;
+//		형변환과 같은 맥락으로 생각하면 된다. 큰타입이 작은타입으로 자동변환은 불가. 강제 형변환 시켜줌
+		System.out.println(marine.getWeapon());
 		
 	}
 
