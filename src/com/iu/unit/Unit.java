@@ -38,6 +38,8 @@ public abstract class Unit {
 	//완성되지 않은 메서드
 	public abstract void move();
 	
+	public abstract void attack();
+	
 	public void info() {
 		System.out.println("Super info");
 	}
