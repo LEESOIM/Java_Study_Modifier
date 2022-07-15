@@ -27,6 +27,7 @@ public class Zoo {
 //		System.out.println(PRICE); //객체가 생성되어야 한다 info()->main 실행시 객체생성전이므로 오류 
 //		Zoo.getPrice(); //객체가 생성되어야 한다
 		
+//		static : 프로그램이 실행되기도 전에 만들어짐
 //		(실행순서 : static으로 선언된 변수(메서드) -> main(스택) -> 객체생성(스택))
 	}
 	
