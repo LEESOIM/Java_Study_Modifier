@@ -8,6 +8,7 @@ public class Zoo {
 	public static String title="사파리";		//static : 객체를 생성하지 않고 사용 가능
 
 	//멤버(인스턴스)변수						// 객체를 생성해야 사용 가능
+	public int price=50000;
 	public final int PRICE=50000; 	//final : 한번 대입한 값은 변경 금지, 상수 취급(대문자)
 
 	
