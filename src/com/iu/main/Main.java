@@ -1,7 +1,5 @@
 package com.iu.main;
 
-import com.iu.util.CollectionStack;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -24,8 +22,13 @@ public class Main {
 		//test data set
 		int [] numbers = {1, 2, 3};
 		
-		CollectionStack cs = new CollectionStack();
-		System.out.println(cs.add(numbers));
+
+		
+		
+		
+	
+
+
 		
 	}
 
